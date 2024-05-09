@@ -163,8 +163,8 @@ devDependencies:
     specifier: 18.2.4
     version: 18.2.4
   '@types/mdx':
-    specifier: 2.0.12
-    version: 2.0.12
+    specifier: 2.0.13
+    version: 2.0.13
   '@types/node':
     specifier: 18.19.26
     version: 18.19.26
@@ -3623,7 +3623,7 @@ packages:
       '@types/estree': 1.0.5
       '@types/estree-jsx': 1.0.5
       '@types/hast': 3.0.4
-      '@types/mdx': 2.0.12
+      '@types/mdx': 2.0.13
       collapse-white-space: 2.1.0
       devlop: 1.1.0
       estree-util-build-jsx: 3.0.1
@@ -3652,7 +3652,7 @@ packages:
     peerDependencies:
       react: '>=16'
     dependencies:
-      '@types/mdx': 2.0.12
+      '@types/mdx': 2.0.13
       '@types/react': 18.2.67
       react: 18.2.0
     dev: true
@@ -3663,7 +3663,7 @@ packages:
       '@types/react': '>=16'
       react: '>=16'
     dependencies:
-      '@types/mdx': 2.0.12
+      '@types/mdx': 2.0.13
       '@types/react': 18.2.67
       react: 18.2.0
     dev: false
@@ -6660,8 +6660,8 @@ packages:
     dependencies:
       '@types/unist': 3.0.2
 
-  /@types/mdx@2.0.12:
-    resolution: {integrity: sha512-H9VZ9YqE+H28FQVchC83RCs5xQ2J7mAAv6qdDEaWmXEVl3OpdH+xfrSUzQ1lp7U7oSTRZ0RvW08ASPJsYBi7Cw==}
+  /@types/mdx@2.0.13:
+    resolution: {integrity: sha512-+OWZQfAYyio6YkJb3HLxDrvnx6SWWDbC0zVPfBRzUk0/nqoDyf6dNxQi3eArPe8rJ473nobTMQ/8Zk+LxJ+Yuw==}
 
   /@types/mime-types@2.1.4:
     resolution: {integrity: sha512-lfU4b34HOri+kAY5UheuFMWPDOI+OPceBSHZKp69gEyTL/mmJ4cnU6Y/rlme3UL3GyOn6Y42hyIEw0/q8sWx5w==}
