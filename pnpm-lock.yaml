@@ -211,8 +211,8 @@ devDependencies:
     specifier: 12.0.0
     version: 12.0.0(eslint@8.56.0)
   eslint-plugin-storybook:
-    specifier: 0.6.15
-    version: 0.6.15(eslint@8.56.0)(typescript@5.3.3)
+    specifier: 0.8.0
+    version: 0.8.0(eslint@8.56.0)(typescript@5.3.3)
   eslint-plugin-tailwindcss:
     specifier: 3.14.3
     version: 3.14.3(tailwindcss@3.4.3)
@@ -806,6 +806,16 @@ packages:
       '@babel/core': ^7.0.0-0
     dependencies:
       '@babel/core': 7.23.9
+      '@babel/helper-plugin-utils': 7.24.7
+    dev: true
+
+  /@babel/plugin-syntax-import-assertions@7.24.7(@babel/core@7.22.9):
+    resolution: {integrity: sha512-Ec3NRUMoi8gskrkBe3fNmEQfxDvY8bgfQpz6jlk/41kX9eUjvpyqWU7PBP/pLAvMaSQjbMNKJmvX57jP+M6bPg==}
+    engines: {node: '>=6.9.0'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/core': 7.22.9
       '@babel/helper-plugin-utils': 7.24.7
     dev: true
 
@@ -1872,14 +1882,14 @@ packages:
     engines: {node: '>=16.0.0'}
     dependencies:
       '@envelop/types': 4.0.1
-      tslib: 2.6.2
+      tslib: 2.6.3
     dev: true
 
   /@envelop/types@4.0.1:
     resolution: {integrity: sha512-ULo27/doEsP7uUhm2iTnElx13qTO6I5FKvmLoX41cpfuw8x6e0NUFknoqhEsLzAbgz8xVS5mjwcxGCXh4lDYzg==}
     engines: {node: '>=16.0.0'}
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.6.3
     dev: true
 
   /@esbuild/aix-ppc64@0.21.5:
@@ -2633,7 +2643,7 @@ packages:
     peerDependencies:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0
     dependencies:
-      '@graphql-tools/code-file-loader': 8.0.1(@babel/core@7.23.9)(graphql@16.8.2)
+      '@graphql-tools/code-file-loader': 8.0.1(@babel/core@7.22.9)(graphql@16.8.2)
       graphql: 16.8.2
       tslib: 2.6.2
     transitivePeerDependencies:
@@ -2924,6 +2934,23 @@ packages:
       value-or-promise: 1.0.12
     dev: true
 
+  /@graphql-tools/code-file-loader@8.0.1(@babel/core@7.22.9)(graphql@16.8.2):
+    resolution: {integrity: sha512-pmg81lsIXGW3uW+nFSCIG0lFQIxWVbgDjeBkSWlnP8CZsrHTQEkB53DT7t4BHLryoxDS4G4cPxM52yNINDSL8w==}
+    engines: {node: '>=16.0.0'}
+    peerDependencies:
+      graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
+    dependencies:
+      '@graphql-tools/graphql-tag-pluck': 8.0.1(@babel/core@7.22.9)(graphql@16.8.2)
+      '@graphql-tools/utils': 10.0.3(graphql@16.8.2)
+      globby: 11.1.0
+      graphql: 16.8.2
+      tslib: 2.6.3
+      unixify: 1.0.0
+    transitivePeerDependencies:
+      - '@babel/core'
+      - supports-color
+    dev: true
+
   /@graphql-tools/code-file-loader@8.0.1(@babel/core@7.23.9)(graphql@16.8.2):
     resolution: {integrity: sha512-pmg81lsIXGW3uW+nFSCIG0lFQIxWVbgDjeBkSWlnP8CZsrHTQEkB53DT7t4BHLryoxDS4G4cPxM52yNINDSL8w==}
     engines: {node: '>=16.0.0'}
@@ -2934,7 +2961,7 @@ packages:
       '@graphql-tools/utils': 10.0.3(graphql@16.8.2)
       globby: 11.1.0
       graphql: 16.8.2
-      tslib: 2.6.2
+      tslib: 2.6.3
       unixify: 1.0.0
     transitivePeerDependencies:
       - '@babel/core'
@@ -3056,12 +3083,12 @@ packages:
     peerDependencies:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
     dependencies:
-      '@graphql-tools/graphql-tag-pluck': 8.0.1(@babel/core@7.23.9)(graphql@16.8.2)
+      '@graphql-tools/graphql-tag-pluck': 8.0.1(@babel/core@7.22.9)(graphql@16.8.2)
       '@graphql-tools/utils': 10.2.2(graphql@16.8.2)
       graphql: 16.8.2
       is-glob: 4.0.3
       micromatch: 4.0.7
-      tslib: 2.6.2
+      tslib: 2.6.3
       unixify: 1.0.0
     transitivePeerDependencies:
       - '@babel/core'
@@ -3097,7 +3124,7 @@ packages:
       '@graphql-tools/utils': 10.2.2(graphql@16.8.2)
       '@whatwg-node/fetch': 0.9.18
       graphql: 16.8.2
-      tslib: 2.6.2
+      tslib: 2.6.3
       value-or-promise: 1.0.12
     transitivePeerDependencies:
       - '@types/node'
@@ -3135,7 +3162,7 @@ packages:
       '@graphql-tools/utils': 10.2.2(graphql@16.8.2)
       globby: 11.1.0
       graphql: 16.8.2
-      tslib: 2.6.2
+      tslib: 2.6.3
       unixify: 1.0.0
     dev: true
 
@@ -3153,6 +3180,24 @@ packages:
       unixify: 1.0.0
     dev: true
 
+  /@graphql-tools/graphql-tag-pluck@8.0.1(@babel/core@7.22.9)(graphql@16.8.2):
+    resolution: {integrity: sha512-4sfBJSoXxVB4rRCCp2GTFhAYsUJgAPSKxSV+E3Voc600mK52JO+KsHCCTnPgCeyJFMNR9l94J6+tqxVKmlqKvw==}
+    engines: {node: '>=16.0.0'}
+    peerDependencies:
+      graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
+    dependencies:
+      '@babel/parser': 7.24.7
+      '@babel/plugin-syntax-import-assertions': 7.24.7(@babel/core@7.22.9)
+      '@babel/traverse': 7.24.7
+      '@babel/types': 7.24.7
+      '@graphql-tools/utils': 10.0.3(graphql@16.8.2)
+      graphql: 16.8.2
+      tslib: 2.6.3
+    transitivePeerDependencies:
+      - '@babel/core'
+      - supports-color
+    dev: true
+
   /@graphql-tools/graphql-tag-pluck@8.0.1(@babel/core@7.23.9)(graphql@16.8.2):
     resolution: {integrity: sha512-4sfBJSoXxVB4rRCCp2GTFhAYsUJgAPSKxSV+E3Voc600mK52JO+KsHCCTnPgCeyJFMNR9l94J6+tqxVKmlqKvw==}
     engines: {node: '>=16.0.0'}
@@ -3165,7 +3210,7 @@ packages:
       '@babel/types': 7.24.7
       '@graphql-tools/utils': 10.0.3(graphql@16.8.2)
       graphql: 16.8.2
-      tslib: 2.6.2
+      tslib: 2.6.3
     transitivePeerDependencies:
       - '@babel/core'
       - supports-color
@@ -3198,7 +3243,7 @@ packages:
       '@graphql-tools/utils': 10.2.2(graphql@16.8.2)
       graphql: 16.8.2
       resolve-from: 5.0.0
-      tslib: 2.6.2
+      tslib: 2.6.3
     dev: true
 
   /@graphql-tools/import@7.0.1(graphql@16.8.2):
@@ -3222,7 +3267,7 @@ packages:
       '@graphql-tools/utils': 10.2.2(graphql@16.8.2)
       globby: 11.1.0
       graphql: 16.8.2
-      tslib: 2.6.2
+      tslib: 2.6.3
       unixify: 1.0.0
     dev: true
 
@@ -3249,7 +3294,7 @@ packages:
       '@graphql-tools/utils': 10.0.3(graphql@16.8.2)
       graphql: 16.8.2
       p-limit: 3.1.0
-      tslib: 2.6.2
+      tslib: 2.6.3
     dev: true
 
   /@graphql-tools/load@8.0.2(graphql@16.8.2):
@@ -3362,7 +3407,7 @@ packages:
       '@whatwg-node/fetch': 0.9.18
       graphql: 16.8.2
       isomorphic-ws: 5.0.0(ws@8.17.1)
-      tslib: 2.6.2
+      tslib: 2.6.3
       value-or-promise: 1.0.12
       ws: 8.17.1
     transitivePeerDependencies:
@@ -3408,7 +3453,7 @@ packages:
       '@graphql-typed-document-node/core': 3.2.0(graphql@16.8.2)
       dset: 3.1.3
       graphql: 16.8.2
-      tslib: 2.6.2
+      tslib: 2.6.3
     dev: true
 
   /@graphql-tools/utils@10.2.2(graphql@16.8.2):
@@ -3459,7 +3504,7 @@ packages:
     resolution: {integrity: sha512-JYoxwnPggH2BfO+dWlWZkDeFhyFZqaTRGLvFhy+Pjp2UxitEW6nDrw+pEDw/K9tJwMjIFMmTT9VfTqrnESmBHg==}
     engines: {node: '>=16.0.0'}
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.6.3
     dev: true
 
   /@graphql-yoga/subscription@4.0.0:
@@ -3469,7 +3514,7 @@ packages:
       '@graphql-yoga/typed-event-target': 2.0.0
       '@repeaterjs/repeater': 3.0.6
       '@whatwg-node/events': 0.1.1
-      tslib: 2.6.2
+      tslib: 2.6.3
     dev: true
 
   /@graphql-yoga/typed-event-target@2.0.0:
@@ -3477,7 +3522,7 @@ packages:
     engines: {node: '>=16.0.0'}
     dependencies:
       '@repeaterjs/repeater': 3.0.6
-      tslib: 2.6.2
+      tslib: 2.6.3
     dev: true
 
   /@hapi/hoek@9.3.0:
@@ -7301,7 +7346,7 @@ packages:
     engines: {node: '>=16.0.0'}
     dependencies:
       '@whatwg-node/fetch': 0.9.18
-      tslib: 2.6.2
+      tslib: 2.6.3
     dev: true
 
   /@xml-tools/parser@1.0.11:
@@ -10046,9 +10091,9 @@ packages:
       eslint: 8.56.0
     dev: true
 
-  /eslint-plugin-storybook@0.6.15(eslint@8.56.0)(typescript@5.3.3):
-    resolution: {integrity: sha512-lAGqVAJGob47Griu29KXYowI4G7KwMoJDOkEip8ujikuDLxU+oWJ1l0WL6F2oDO4QiyUFXvtDkEkISMOPzo+7w==}
-    engines: {node: 12.x || 14.x || >= 16}
+  /eslint-plugin-storybook@0.8.0(eslint@8.56.0)(typescript@5.3.3):
+    resolution: {integrity: sha512-CZeVO5EzmPY7qghO2t64oaFM+8FTaD4uzOEjHKp516exyTKo+skKAL9GI3QALS2BXhyALJjNtwbmr1XinGE8bA==}
+    engines: {node: '>= 18'}
     peerDependencies:
       eslint: '>=6'
     dependencies:
@@ -10994,7 +11039,7 @@ packages:
       dset: 3.1.3
       graphql: 16.8.2
       lru-cache: 10.2.2
-      tslib: 2.6.2
+      tslib: 2.6.3
     dev: true
 
   /graphql@16.8.2:
