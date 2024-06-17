@@ -115,8 +115,8 @@ devDependencies:
     specifier: 3.2.0
     version: 3.2.0(graphql@16.8.2)
   '@prettier/plugin-xml':
-    specifier: 3.3.1
-    version: 3.3.1(prettier@3.1.1)
+    specifier: 3.4.1
+    version: 3.4.1(prettier@3.1.1)
   '@storybook/addon-actions':
     specifier: 7.6.19
     version: 7.6.19
@@ -806,6 +806,16 @@ packages:
       '@babel/core': ^7.0.0-0
     dependencies:
       '@babel/core': 7.23.9
+      '@babel/helper-plugin-utils': 7.24.7
+    dev: true
+
+  /@babel/plugin-syntax-import-assertions@7.24.7(@babel/core@7.22.9):
+    resolution: {integrity: sha512-Ec3NRUMoi8gskrkBe3fNmEQfxDvY8bgfQpz6jlk/41kX9eUjvpyqWU7PBP/pLAvMaSQjbMNKJmvX57jP+M6bPg==}
+    engines: {node: '>=6.9.0'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/core': 7.22.9
       '@babel/helper-plugin-utils': 7.24.7
     dev: true
 
@@ -2633,7 +2643,7 @@ packages:
     peerDependencies:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0
     dependencies:
-      '@graphql-tools/code-file-loader': 8.0.1(@babel/core@7.23.9)(graphql@16.8.2)
+      '@graphql-tools/code-file-loader': 8.0.1(@babel/core@7.22.9)(graphql@16.8.2)
       graphql: 16.8.2
       tslib: 2.6.2
     transitivePeerDependencies:
@@ -2924,6 +2934,23 @@ packages:
       value-or-promise: 1.0.12
     dev: true
 
+  /@graphql-tools/code-file-loader@8.0.1(@babel/core@7.22.9)(graphql@16.8.2):
+    resolution: {integrity: sha512-pmg81lsIXGW3uW+nFSCIG0lFQIxWVbgDjeBkSWlnP8CZsrHTQEkB53DT7t4BHLryoxDS4G4cPxM52yNINDSL8w==}
+    engines: {node: '>=16.0.0'}
+    peerDependencies:
+      graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
+    dependencies:
+      '@graphql-tools/graphql-tag-pluck': 8.0.1(@babel/core@7.22.9)(graphql@16.8.2)
+      '@graphql-tools/utils': 10.0.3(graphql@16.8.2)
+      globby: 11.1.0
+      graphql: 16.8.2
+      tslib: 2.6.2
+      unixify: 1.0.0
+    transitivePeerDependencies:
+      - '@babel/core'
+      - supports-color
+    dev: true
+
   /@graphql-tools/code-file-loader@8.0.1(@babel/core@7.23.9)(graphql@16.8.2):
     resolution: {integrity: sha512-pmg81lsIXGW3uW+nFSCIG0lFQIxWVbgDjeBkSWlnP8CZsrHTQEkB53DT7t4BHLryoxDS4G4cPxM52yNINDSL8w==}
     engines: {node: '>=16.0.0'}
@@ -3056,7 +3083,7 @@ packages:
     peerDependencies:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
     dependencies:
-      '@graphql-tools/graphql-tag-pluck': 8.0.1(@babel/core@7.23.9)(graphql@16.8.2)
+      '@graphql-tools/graphql-tag-pluck': 8.0.1(@babel/core@7.22.9)(graphql@16.8.2)
       '@graphql-tools/utils': 10.2.2(graphql@16.8.2)
       graphql: 16.8.2
       is-glob: 4.0.3
@@ -3151,6 +3178,24 @@ packages:
       graphql: 16.8.2
       tslib: 2.6.3
       unixify: 1.0.0
+    dev: true
+
+  /@graphql-tools/graphql-tag-pluck@8.0.1(@babel/core@7.22.9)(graphql@16.8.2):
+    resolution: {integrity: sha512-4sfBJSoXxVB4rRCCp2GTFhAYsUJgAPSKxSV+E3Voc600mK52JO+KsHCCTnPgCeyJFMNR9l94J6+tqxVKmlqKvw==}
+    engines: {node: '>=16.0.0'}
+    peerDependencies:
+      graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
+    dependencies:
+      '@babel/parser': 7.24.7
+      '@babel/plugin-syntax-import-assertions': 7.24.7(@babel/core@7.22.9)
+      '@babel/traverse': 7.24.7
+      '@babel/types': 7.24.7
+      '@graphql-tools/utils': 10.0.3(graphql@16.8.2)
+      graphql: 16.8.2
+      tslib: 2.6.2
+    transitivePeerDependencies:
+      - '@babel/core'
+      - supports-color
     dev: true
 
   /@graphql-tools/graphql-tag-pluck@8.0.1(@babel/core@7.23.9)(graphql@16.8.2):
@@ -4504,8 +4549,8 @@ packages:
       webpack: 5.92.0(@swc/core@1.6.1)(esbuild@0.18.20)
     dev: true
 
-  /@prettier/plugin-xml@3.3.1(prettier@3.1.1):
-    resolution: {integrity: sha512-kllNJk6n2pXJjGWdj+HAr1GhOoOTrlmeWkDYCGBzkyZS2l0K6h2gsUQcVif2cNqAE1MNC+nUrzN6QwEsCukPnQ==}
+  /@prettier/plugin-xml@3.4.1(prettier@3.1.1):
+    resolution: {integrity: sha512-Uf/6/+9ez6z/IvZErgobZ2G9n1ybxF5BhCd7eMcKqfoWuOzzNUxBipNo3QAP8kRC1VD18TIo84no7LhqtyDcTg==}
     peerDependencies:
       prettier: ^3.0.0
     dependencies:
